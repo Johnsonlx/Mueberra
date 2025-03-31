@@ -68,6 +68,10 @@
   
   /* Base styles */
   
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
   
   body {
     font-family: 'Poppins', sans-serif;
@@ -213,6 +217,21 @@
     background-size: 100%;
   }  
   
+  .apple-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85vh;
+    background-color: #000;
+    /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
+    background-image: url("https://etepetete-bio.de/ACM/AttachmentLoader?rowguid=FEB802E1-3031-4A6B-BA64-6482521DE292&width=600&useOrigFileType=true&allowUpscale=false");
+    background-position: center;
+    background-size: cover;
+  }  
+  
+
   .bewegung-section {
     display: flex;
     flex-direction: column;
@@ -224,7 +243,7 @@
     /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
     background-image: url("https://www.aok.de/pk/magazin/cms/fileadmin/_processed_/2/d/csm_bewegung-hilft_268352aee3.jpg.webp");
     background-position: center;
-    background-size: 150%;
+    background-size: cover;
   }  
   
   .ernährung-section {
