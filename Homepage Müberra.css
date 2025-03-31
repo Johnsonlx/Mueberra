@@ -46,21 +46,21 @@
   */
   
   /* 1200px / 16px = 75em */
-  @media (max-width: 75em) {
+  @media (max-width: 100%) {
     html {
       font-size: 60%;
     }
   }
   
   /* 980px / 16px = 61.25em */
-  @media (max-width: 61.25em) {
+  @media (max-width: 100%) {
     html {
       font-size: 58%;
     }
   }
   
   /* 460px / 16px = 28.75em */
-  @media (max-width: 28.75em) {
+  @media (max-width: 100%) {
     html {
       font-size: 55%;
     }
@@ -144,7 +144,7 @@
 }
   
 
-  @media (max-width: 28.75em) {
+  @media (max-width: 100%) {
     .nav {
       justify-content: center;
     }
@@ -326,11 +326,11 @@
   }
   
   .projects-section-header {
-    max-width: 740px;
+    max-width: 100%;
     margin: 0 auto 6rem auto;
   }
   
-  @media (max-width: 28.75em) {
+  @media (max-width: 100%) {
     .projects-section-header {
       font-size: 4rem;
     }
@@ -347,7 +347,7 @@
     margin-bottom: 6rem;
   }
   
-  @media (max-width: 30.625em) {
+  @media (max-width: 100%) {
     .projects-section {
       padding: 6rem 1rem;
     }
@@ -427,7 +427,7 @@
     font-size: 6rem;
   }
   
-  @media (max-width: 28.75em) {
+  @media (max-width: 100%) {
     .contact-section-header > h2 {
       font-size: 4rem;
     }
@@ -441,7 +441,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    max-width: 980px;
+    max-width: 100%;
     margin-top: 4rem;
     flex-wrap: wrap;
   }
@@ -475,7 +475,7 @@
     vertical-align: middle;
   }
   
-  @media (max-width: 28.75em) {
+  @media (max-width: 100%) {
     footer {
       flex-direction: column;
       text-align: center;
@@ -614,7 +614,7 @@
 
  /* Verbesserungen für mobile Darstellung */
 
- @media (max-width: 768px) {
+ @media (max-width: 100%) {
   /* Navigation anpassen */
   .nav {
     flex-direction: column;
