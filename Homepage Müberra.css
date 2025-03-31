@@ -67,11 +67,7 @@
   }
   
   /* Base styles */
-  
-  html, body {
-    width: 100%;
-    overflow-x: hidden;
-}
+
   
   body {
     font-family: 'Poppins', sans-serif;
@@ -172,29 +168,8 @@
     background: var(--main-blue);
 }
   
-  .nav2 {
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9;
-  }
 
-  .nav-list2 {
-    display: flex;
-    gap: 2rem; /* Abstand zwischen den Links */
-    list-style: none; /* Entfernt Bullet Points */
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-list2 a {
-    display: block;
-    font-size: 1.7rem;
-    padding: 2rem;
-  }
+
 
   .color-headline {
     color: var(--main-gray);
@@ -257,7 +232,7 @@
     /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
     background-image: url("https://image.geo.de/30126392/t/s4/v3/w960/r0/-/ernaehrung-f-111775068-jpg--71601-.jpg");
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
   }  
 
   
@@ -272,7 +247,7 @@
     /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
     background-image: url("https://ognx.com/cdn/shop/articles/Blogpost_XL_1_880x588_crop_center.jpg?v=1651838744");
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
   }  
 
 
@@ -287,7 +262,7 @@
     /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
     background-image: url("https://media.foodspring.com/magazine/public/uploads/2020/11/GettyImages-1076946698.jpg");
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
   }  
 
 
@@ -302,7 +277,7 @@
     /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
     background-image: url("https://image.stern.de/7563246/t/4O/v3/w960/r1.7778/-/irrtum-meike-winnemuth.jpg");
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
   }  
 
 
@@ -361,7 +336,7 @@
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 4rem;
     width: 100%;
-    max-width: 1280px;
+    max-width: 100%;
     margin: 0 auto;
     margin-bottom: 6rem;
   }
