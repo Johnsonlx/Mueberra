@@ -149,6 +149,7 @@
 
   @media (max-width: 100%) {
     .nav {
+      width: 100%;  
       justify-content: center;
     }
   
@@ -324,11 +325,13 @@
   
   .projects-section-header {
     max-width: 100%;
+    width: 100%;  
     margin: 0 auto 6rem auto;
   }
   
   @media (max-width: 100%) {
     .projects-section-header {
+      width: 100%;  
       font-size: 4rem;
     }
   }
@@ -346,6 +349,7 @@
   
   @media (max-width: 100%) {
     .projects-section {
+      width: 100%;  
       padding: 6rem 1rem;
     }
   
@@ -474,6 +478,7 @@
   
   @media (max-width: 100%) {
     footer {
+      width: 100%;  
       flex-direction: column;
       text-align: center;
     }
@@ -614,6 +619,7 @@
  @media (max-width: 100%) {
   /* Navigation anpassen */
   .nav {
+    width: 100%;  
     flex-direction: column;
     align-items: center;
     padding: 1rem 0;
