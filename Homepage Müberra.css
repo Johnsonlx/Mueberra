@@ -129,41 +129,43 @@
 
   .home {
     display: block; 
-    align-items: center; /* Zentriert den Text vertikal */
+    align-items: center; 
     justify-content: center;
     font-size: 2.2rem;
     font-weight: bold;
-    margin-left: 3rem;
-    padding: 2rem;  
-    height: 100%; /* Stellt sicher, dass die Höhe gleich der Navbar ist */
+    margin: 0rem 2rem 0 2rem;
+    padding: 1rem;  
+    height: 100%; 
 }
 
 
 .nav-list {
   display: flex;
-  gap: 2rem; /* Abstand zwischen den Links */
+  gap: 1rem;/* Abstand zwischen den Links */
   list-style: none; /* Entfernt Bullet Points */
   margin: 0;
   padding: 0;
 }
   
 
-  @media (max-width: 100%) {
-    .nav {
-      justify-content: center;
-    }
-  
-    .nav-list {
-      margin: 0 1rem;
-    }
+
+@media (max-width: 100%) {
+  .nav {
+    justify-content: center;
   }
-  
-  .nav-list a {
-    display: block;
-    font-size: 2.2rem;
-    padding: 2rem;
+
+  .nav-list {
+    margin: 0 1rem;
   }
-  
+}
+
+.nav-list a {
+  display: block;
+  font-size: 2.2rem;
+  padding: 1.5rem;
+}
+
+
   .nav-list a:hover {
     background: var(--main-blue);
   }
@@ -173,9 +175,7 @@
 }
   
 
-
-
-  .color-headline {
+.color-headline {
     color: var(--main-gray);
   }
 
@@ -188,7 +188,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 85vh;
+    height: 100vh;
     background-color: #000;
     /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
     background-image: url("https://images.pexels.com/photos/2395249/pexels-photo-2395249.jpeg");
@@ -202,7 +202,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 85vh;
+    height: 100vh;
     background-color: #000;
     /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
     background-image: url("https://etepetete-bio.de/ACM/AttachmentLoader?rowguid=FEB802E1-3031-4A6B-BA64-6482521DE292&width=600&useOrigFileType=true&allowUpscale=false");
@@ -217,7 +217,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 85vh;
+    height: 100vh;
     background-color: #000;
     /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
     background-image: url("https://www.aok.de/pk/magazin/cms/fileadmin/_processed_/2/d/csm_bewegung-hilft_268352aee3.jpg.webp");
@@ -231,7 +231,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 85vh;
+    height: 100vh;
     background-color: #000;
     /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
     background-image: url("https://image.geo.de/30126392/t/s4/v3/w960/r0/-/ernaehrung-f-111775068-jpg--71601-.jpg");
@@ -246,7 +246,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 85vh;
+    height: 100vh;
     background-color: #000;
     /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
     background-image: url("https://ognx.com/cdn/shop/articles/Blogpost_XL_1_880x588_crop_center.jpg?v=1651838744");
@@ -261,7 +261,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 85vh;
+    height: 100vh;
     background-color: #000;
     /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
     background-image: url("https://media.foodspring.com/magazine/public/uploads/2020/11/GettyImages-1076946698.jpg");
@@ -276,7 +276,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 85vh;
+    height: 100vh;
     background-color: #000;
     /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
     background-image: url("https://image.stern.de/7563246/t/4O/v3/w960/r1.7778/-/irrtum-meike-winnemuth.jpg");
@@ -293,28 +293,7 @@
     color: #ff0000;
   }
 
-/* Headline section */
 
-  .headline-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 7.5rem 80rem 0rem 0rem;
-    align-items: center;
-    width: 100%;
-    height: 15vh;
-    background-color: #000;
-    /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
-    background-image: url("https://images.pexels.com/photos/1323712/pexels-photo-1323712.jpeg");
-    background-position: center;
-    background-size: 100%;
-  }  
-
-  .headline-termin {
-    display: flex;
-    align-content: center;
-    justify-self: end;
-  }
   
   /* Projects section */
   
@@ -328,14 +307,17 @@
     max-width: 100%;
     margin: 0 auto 6rem auto;
   }
-  
+
+    
   @media (max-width: 100%) {
     .projects-section-header {
       font-size: 4rem;
     }
   }
+
   
   /* "Automagic" image grid using no media queries */
+
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -343,7 +325,8 @@
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    margin-bottom: 6rem;
+    margin-bottom: 2.5rem;
+    padding: 3rem;
   }
   
   @media (max-width: 100%) {
@@ -358,8 +341,8 @@
   
   .project {
     background: var(--main-gray);
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    border-radius: 2px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
   }
   
   .code {
@@ -374,6 +357,7 @@
   .project-image {
     height: calc(100% - 6.8rem);
     width: 100%;
+    padding: 7rem 0 0 0;
     object-fit: cover;
   }
   
@@ -417,7 +401,7 @@
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 80vh;
+    height: 50vh;
     padding: 0 2rem;
     background: var(--main-gray);
   }
@@ -604,13 +588,6 @@
  }
 
 
-
-
-
-
-
- 
-
  /* Verbesserungen für mobile Darstellung */
 
  @media (max-width: 100%) {
@@ -629,7 +606,7 @@
     padding: 1rem;
     font-size: 1.8rem;
   }
-
+}
   /* Überschriften und Textgrößen */
   h1 {
     font-size: 4rem;
@@ -637,6 +614,7 @@
   h2 {
     font-size: 3rem;
   }
+
 
   /* Hintergrundbilder anpassen */
   .welcome-section,
@@ -659,4 +637,4 @@
     flex-direction: column;
     text-align: center;
   }
-}
+
