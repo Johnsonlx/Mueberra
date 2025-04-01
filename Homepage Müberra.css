@@ -148,22 +148,12 @@
 }
   
 
-
-@media (max-width: 100%) {
-  .nav {
-    justify-content: center;
-  }
-
-  .nav-list {
-    margin: 0 1rem;
-  }
-}
-
 .nav-list a {
   display: block;
   font-size: 2.2rem;
   padding: 1.5rem;
 }
+
 
 
   .nav-list a:hover {
