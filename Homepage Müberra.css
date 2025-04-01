@@ -32,7 +32,7 @@
 
 
 /* Extra große Geräte (Desktops, ab 1201px) */
-  @media (min-width: 1201px {
+  @media (min-width: 1201px) {
     html {
       font-size: 62%;
     }
