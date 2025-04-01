@@ -578,25 +578,8 @@
  }
 
 
- /* Verbesserungen für mobile Darstellung */
 
- @media (max-width: 100%) {
-  /* Navigation anpassen */
-  .nav {
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 0;
-  }
-  .nav-list {
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-  }
-  .nav-list a {
-    padding: 1rem;
-    font-size: 1.8rem;
-  }
-}
+
   /* Überschriften und Textgrößen */
   h1 {
     font-size: 4rem;
