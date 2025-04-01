@@ -5,7 +5,7 @@
     --main-blue: #45567d;
     --main-gray: #303841;
   }
-
+  
   /* Base reset */
   * {
     margin: 0;
@@ -30,45 +30,46 @@
     scroll-behavior: smooth;
   }
 
+  
 
 /* Extra große Geräte (Desktops, ab 1201px) */
-  @media (min-width: 1201px) {
-    html {
-      font-size: 62%;
-    }
+@media (min-width: 1201px) {
+  html {
+    font-size: 62%;
   }
+}
 
 
- /* Große Geräte (Laptops, 993px - 1200px) */
-  @media (min-width: 993px) and (max-width: 1200px) {
-    html {
-      font-size: 60%;
-    }
+/* Große Geräte (Laptops, 993px - 1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  html {
+    font-size: 60%;
   }
-  
-  /* Mittlere Geräte (Tablets, 769px - 992px) */
-  @media (min-width: 769px) and (max-width: 992px) {
-    html {
-      font-size: 58%;
-    }
+}
+
+/* Mittlere Geräte (Tablets, 769px - 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  html {
+    font-size: 58%;
   }
+}
 
 
-  /* Kleine Geräte (Smartphones, 577px - 768px) */
-  @media (min-width: 577px) and (max-width: 768px) {
-    html {
-      font-size: 55%;
-    }
+/* Kleine Geräte (Smartphones, 577px - 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  html {
+    font-size: 55%;
   }
-  
+}
 
-  /* Extra kleine Geräte (Smartphones, bis ca. 576px) */
-  @media (max-width: 576px) {
-    html {
-      font-size: 53%;
-    }
+
+/* Extra kleine Geräte (Smartphones, bis ca. 576px) */
+@media (max-width: 576px) {
+  html {
+    font-size: 53%;
   }
-  
+}
+
   /* Base styles */
 
   
@@ -116,7 +117,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -149,7 +150,6 @@
 
   @media (max-width: 100%) {
     .nav {
-      width: 100%;  
       justify-content: center;
     }
   
@@ -286,10 +286,11 @@
 
 
   .welcome-section > p {
-    font-size: 2.5rem;
+    padding: 20px 35px 0 35px;
+    font-size: 2rem;
     font-weight: 200;
     font-style: italic;
-    color: var(--main-red);
+    color: #ff0000;
   }
 
 /* Headline section */
@@ -325,13 +326,11 @@
   
   .projects-section-header {
     max-width: 100%;
-    width: 100%;  
     margin: 0 auto 6rem auto;
   }
   
   @media (max-width: 100%) {
     .projects-section-header {
-      width: 100%;  
       font-size: 4rem;
     }
   }
@@ -349,7 +348,6 @@
   
   @media (max-width: 100%) {
     .projects-section {
-      width: 100%;  
       padding: 6rem 1rem;
     }
   
@@ -478,7 +476,6 @@
   
   @media (max-width: 100%) {
     footer {
-      width: 100%;  
       flex-direction: column;
       text-align: center;
     }
@@ -619,7 +616,6 @@
  @media (max-width: 100%) {
   /* Navigation anpassen */
   .nav {
-    width: 100%;  
     flex-direction: column;
     align-items: center;
     padding: 1rem 0;
