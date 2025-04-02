@@ -165,6 +165,43 @@
   .home:hover {
     background: var(--main-blue);
 }
+
+
+  /* Drop-Down Menü Burger ICON */
+
+@media screen and (max-width: 768px) {
+ .nav-list.active {
+    display: flex !important;
+    flex-direction: column;
+}
+}
+
+
+/* Wenn die Bildschirmbreite groß genug ist, verstecke das Burger-Icon */
+@media (min-width: 769px) {
+    .burger-menu {
+        display: none !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .nav-list {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        background: none;
+        width: auto;
+        padding: 0;
+    }
+}
+
+.burger-menu {
+    display: block; /* Standardmäßig sichtbar */
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
   
 
 .color-headline {
@@ -607,51 +644,3 @@
     text-align: center;
   }
 
-
-
-
-@media screen and (max-width: 768px) {
-    .nav-list {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 10px;
-        background-color: var(--main-red);
-        width: 200px;
-        border-radius: 5px;
-        padding: 10px;
-        transition: all 0.3s ease-in-out;
-    }
-
-.nav-list.active {
-    display: flex !important;
-    flex-direction: column;
-}
-}
-
-
-/* Wenn die Bildschirmbreite groß genug ist, verstecke das Burger-Icon */
-@media (min-width: 769px) {
-    .burger-menu {
-        display: none !important;
-    }
-}
-
-@media (min-width: 769px) {
-    .nav-list {
-        display: flex !important;
-        flex-direction: row;
-        position: static;
-        background: none;
-        width: auto;
-        padding: 0;
-    }
-}
-
-.burger-menu {
-    display: block; /* Standardmäßig sichtbar */
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-}
