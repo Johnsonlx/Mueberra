@@ -643,11 +643,4 @@
     .burger-menu {
         display: none;
     }
-
-    .nav-list {
-        display: flex !important; /* Immer sichtbar in Desktop-Ansicht */
-        flex-direction: row;
-        position: static;
-        background: none;
-    }
 }
