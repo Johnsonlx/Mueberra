@@ -627,19 +627,11 @@
     .nav-list.active {
         display: flex;
     }
-
-    .burger-menu {
-        display: block;
-        font-size: 30px;
-        color: white;
-        cursor: pointer;
-        padding: 0 0 0 1rem;
-    }
 }
 
 
 /* Wenn die Bildschirmbreite groß genug ist, verstecke das Burger-Icon */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .burger-menu {
         display: none !important;
     }
@@ -654,4 +646,12 @@
         width: auto;
         padding: 0;
     }
+}
+
+.burger-menu {
+    display: block; /* Standardmäßig sichtbar */
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    padding: 0 0 1rem 1;
 }
