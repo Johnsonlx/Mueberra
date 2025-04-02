@@ -644,3 +644,7 @@
         display: none !important;
     }
 }
+
+.burger-menu {
+    display: none;
+}
