@@ -639,8 +639,8 @@
 
 
 /* Wenn die Bildschirmbreite groß genug ist, verstecke das Burger-Icon */
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
     .burger-menu {
-        display: none;
+        display: none !important;
     }
 }
