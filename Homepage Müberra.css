@@ -637,3 +637,17 @@
     }
 }
 
+
+/* Wenn die Bildschirmbreite groß genug ist, verstecke das Burger-Icon */
+@media (min-width: 768px) { 
+    .burger-menu {
+        display: none;
+    }
+
+    .nav-list {
+        display: flex !important; /* Immer sichtbar in Desktop-Ansicht */
+        flex-direction: row;
+        position: static;
+        background: none;
+    }
+}
