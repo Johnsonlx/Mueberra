@@ -170,6 +170,18 @@
   /* Drop-Down Menü Burger ICON */
 
 @media screen and (max-width: 768px) {
+   .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: var(--main-red);
+        width: 200px;
+        border-radius: 5px;
+        padding: 10px;
+        transition: all 0.3s ease-in-out;
+    }
  .nav-list.active {
     display: flex !important;
     flex-direction: column;
