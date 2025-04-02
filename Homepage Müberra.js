@@ -77,7 +77,7 @@ test.forEach(fader => {
 
 // observer.observe(document.querySelector(".projects-grid"));
 
-
+// Burger MENU
 
 document.addEventListener("DOMContentLoaded", function () {
     const burgerMenu = document.querySelector(".burger-menu"); 
@@ -89,8 +89,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     document.addEventListener("click", function (event) {
+        // Prüfen, ob der Klick NICHT innerhalb des Menüs oder des Icons war
         if (!navLinks.contains(event.target) && !burgerMenu.contains(event.target)) {
             navLinks.classList.remove("active");
         }
+    });
+
+    // Falls das Menü Links enthält, die geklickt werden, soll es sich auch schließen
+    navLinks.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", function () {
+            navLinks.classList.remove("active");
+        });
     });
 });
