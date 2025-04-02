@@ -79,15 +79,18 @@ test.forEach(fader => {
 
 
 
-// Menuband
-
 document.addEventListener("DOMContentLoaded", function () {
     const burgerMenu = document.querySelector(".burger-menu"); 
     const navLinks = document.querySelector(".nav-list");
 
-    if (burgerMenu && navLinks) {
-        burgerMenu.addEventListener("click", function () {
-            navLinks.classList.toggle("active");
-        });
-    }
+    burgerMenu.addEventListener("click", function (event) {
+        event.stopPropagation(); // Verhindert das Schließen beim Klick auf das Burger-Icon
+        navLinks.classList.toggle("active");
+    });
+
+    document.addEventListener("click", function (event) {
+        if (!navLinks.contains(event.target) && !burgerMenu.contains(event.target)) {
+            navLinks.classList.remove("active");
+        }
+    });
 });
