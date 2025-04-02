@@ -79,7 +79,13 @@ test.forEach(fader => {
 
 
 
-function toggleMenu() {
-    document.querySelector(".nav-links").classList.toggle("active");
-}
+// Menuband
 
+document.addEventListener("DOMContentLoaded", function () {
+    const burgerMenu = document.getElementById("burgerMenu");
+    const navLinks = document.getElementById("navLinks");
+
+    burgerMenu.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+    });
+});
