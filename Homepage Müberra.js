@@ -82,8 +82,8 @@ test.forEach(fader => {
 // Menuband
 
 document.addEventListener("DOMContentLoaded", function () {
-    const burgerMenu = document.getElementById("burgerMenu");
-    const navLinks = document.getElementById("navLinks");
+    const burgerMenu = document.querySelector(".burger-menu"); 
+    const navLinks = document.querySelector(".nav-list");
 
     burgerMenu.addEventListener("click", function () {
         navLinks.classList.toggle("active");
