@@ -645,6 +645,17 @@
     }
 }
 
+@media (min-width: 769px) {
+    .nav-list {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        background: none;
+        width: auto;
+        padding: 0;
+    }
+}
+
 .burger-menu {
     display: none;
 }
