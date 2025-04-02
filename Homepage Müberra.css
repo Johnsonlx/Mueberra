@@ -624,9 +624,10 @@
         transition: all 0.3s ease-in-out;
     }
 
-    .nav-list.active {
-        display: flex;
-    }
+.nav-list.active {
+    display: flex !important;
+    flex-direction: column;
+}
 }
 
 
@@ -653,5 +654,4 @@
     font-size: 30px;
     color: white;
     cursor: pointer;
-    padding: 0 0 1rem 1;
 }
