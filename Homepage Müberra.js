@@ -76,3 +76,10 @@ test.forEach(fader => {
 
 
 // observer.observe(document.querySelector(".projects-grid"));
+
+
+
+function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+}
+
