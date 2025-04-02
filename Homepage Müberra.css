@@ -65,18 +65,6 @@
   }
 }
 
-/* Responsives Layout für den Header */
-@media only screen and (max-width: 768px) {
-    #navbar {
-        padding: 1rem; /* Weniger Padding für kleinere Bildschirme */
-    }
-    .nav-list {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-}
-
   /* Base styles */
 
   
@@ -113,7 +101,8 @@
   
   img {
     display: block;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
   
   /* nav */
@@ -122,6 +111,18 @@
 #navbar {
     width: 100%; /* Sicherstellen, dass der Header die ganze Breite einnimmt */
     box-sizing: border-box; /* Padding und Border in die Breite einrechnen */
+}
+
+/* Responsives Layout für den Header */
+@media only screen and (max-width: 768px) {
+    #navbar {
+        padding: 1rem; /* Weniger Padding für kleinere Bildschirme */
+    }
+    .nav-list {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
 }
 
   .nav {
