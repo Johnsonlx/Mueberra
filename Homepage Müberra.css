@@ -5,14 +5,6 @@
     --main-blue: #45567d;
     --main-gray: #303841;
   }
-  
-  /* Base reset */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
 
 /* Setze box-sizing auf border-box für alle Elemente */
 *,
