@@ -606,3 +606,42 @@
     text-align: center;
   }
 
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #333;
+        width: 200px;
+        border-radius: 5px;
+    }
+
+    .nav-list li {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+}
+
+
+.burger-menu {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+
