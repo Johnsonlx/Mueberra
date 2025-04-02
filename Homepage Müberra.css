@@ -125,7 +125,16 @@
   }
   
   /* nav */
-  
+
+
+/* Container für den Header hinzufügen, um die Breite zu kontrollieren */
+.nav-container {
+    width: 100%;
+    max-width: 1200px; /* Maximalbreite für den Header */
+    margin: 0 auto; /* Zentriert den Header */
+    padding: 0 1rem;
+}
+
 #navbar {
     width: 100%; /* Sicherstellen, dass der Header die ganze Breite einnimmt */
     box-sizing: border-box; /* Padding und Border in die Breite einrechnen */
