@@ -77,7 +77,10 @@ test.forEach(fader => {
 
 // observer.observe(document.querySelector(".projects-grid"));
 
-// Burger MENU
+
+
+
+// START Burger MENU
 
 document.addEventListener("DOMContentLoaded", function () {
     const burgerMenu = document.querySelector(".burger-menu"); 
@@ -102,3 +105,42 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// END Burger MENU
+
+
+
+// START FAQ
+
+
+// FAQ Dropdown-Funktionalität
+
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleBlocks = document.querySelectorAll(".toggle-block");
+
+  toggleBlocks.forEach(block => {
+    const title = block.querySelector(".toggle-title");
+    const box = block.querySelector(".toggle-box");
+    const arrow = block.querySelector(".arrow i");
+
+    title.addEventListener("click", () => {
+      const isOpen = box.style.display === "block";
+
+
+      // Aktuelles öffnen/schließen
+      if (!isOpen) {
+        box.style.display = "block";
+        arrow.classList.remove("fa-angle-down");
+        arrow.classList.add("fa-angle-up");
+      } else {
+        box.style.display = "none";
+        arrow.classList.remove("fa-angle-up");
+        arrow.classList.add("fa-angle-down");
+      }
+    });
+  });
+});
+
+
+// END FAQ
+
