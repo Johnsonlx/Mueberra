@@ -400,7 +400,7 @@ padding: 1.5rem;
   
 @media (max-width: 768px) {
   .projects-section-header {
-    font-size: 4rem;
+    font-size: 1rem;
   }
 }
 
