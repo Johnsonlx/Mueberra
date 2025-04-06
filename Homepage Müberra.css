@@ -796,8 +796,8 @@ footer {
 @media (max-width: 800px) {
   .toggle-block > .toggle-title > .num {
       width: 40px;
-      font-size: 14px;
-      line-height: 16px;
+      font-size: 4px;
+      line-height: 22px;
   }
 }
 
@@ -812,8 +812,8 @@ footer {
 @media (max-width: 800px) {
   .toggle-block > .toggle-title > .text {
       width: calc(100% - 80px);
-      font-size: 14px;
-      line-height: 16px;
+      font-size: 4px;
+      line-height: 22px;
   }
 }
 
