@@ -501,7 +501,7 @@ padding: 1.5rem;
 
 @media (max-width: 768px) {
   .contact-section-header > h2 {
-    font-size: 4rem;
+    font-size: 1rem;
     padding: 0rem 0rem 0rem 0rem;
   }
 }
