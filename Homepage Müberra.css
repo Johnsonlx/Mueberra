@@ -825,6 +825,14 @@ footer {
   font-size: 20px;
 }
 
+.toggle-block.toggle-active > .toggle-title > .text {
+  width: calc(100% - 120px);
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  color: var(--main-white);
+  font-size: 20px;
+}
+
 @media (max-width: 800px) {
   .toggle-block > .toggle-title > .arrow {
       width: 40px;
