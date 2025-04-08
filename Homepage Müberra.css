@@ -400,7 +400,7 @@ padding: 1.5rem;
   
 @media (max-width: 768px) {
   .projects-section-header {
-    font-size: 1rem;
+    font-size: 4rem;
   }
 }
 
@@ -501,7 +501,7 @@ padding: 1.5rem;
 
 @media (max-width: 768px) {
   .contact-section-header > h2 {
-    font-size: 1rem;
+    font-size: 4rem;
     padding: 0rem 0rem 0rem 0rem;
   }
 }
@@ -854,6 +854,7 @@ footer {
   font-size: 20px;
 }
 
+
 .toggle-block > .toggle-title > .text {
   width: calc(100% - 120px);
   font-family: 'Poppins', sans-serif;
@@ -862,13 +863,6 @@ footer {
   font-size: 20px;
 }
 
-.toggle-block.toggle-active > .toggle-title > .text {
-  width: calc(100% - 120px);
-  font-family: 'Poppins', sans-serif;
-  text-align: left;
-  color: var(--main-white);
-  font-size: 20px;
-}
 
 .toggle-block > .toggle-title > .arrow {
   width: 60px;
