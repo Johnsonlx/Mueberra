@@ -796,8 +796,8 @@ footer {
 @media (max-width: 800px) {
   .toggle-block > .toggle-title > .num {
       width: 40px;
-      font-size: 4px;
-      line-height: 22px;
+      font-size: 14px;
+      line-height: 18px;
   }
 }
 
@@ -812,8 +812,8 @@ footer {
 @media (max-width: 800px) {
   .toggle-block > .toggle-title > .text {
       width: calc(100% - 80px);
-      font-size: 4px;
-      line-height: 22px;
+      font-size: 14px;
+      line-height: 18px;
   }
 }
 
@@ -831,6 +831,25 @@ footer {
   text-align: left;
   color: var(--main-white);
   font-size: 20px;
+}
+
+@media (max-width: 576px) {
+  .toggle-block > .toggle-title > .text {
+    width: calc(100% - 80px);
+    font-size: 12px;
+    line-height: 16px;
+  }
+  
+  .toggle-block > .toggle-title > .num {
+    width: 30px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  
+  /* Make toggle title height smaller on very small screens */
+  .toggle-block > .toggle-title {
+    height: 60px;
+  }
 }
 
 @media (max-width: 800px) {
