@@ -794,10 +794,55 @@ footer {
 }
 
 @media (max-width: 800px) {
+  /* Increase the toggle title height slightly to accommodate content */
+  .toggle-block > .toggle-title {
+    height: auto;
+    min-height: 60px;
+    padding: 10px 0;
+  }
+  
+  /* Adjust the number element */
   .toggle-block > .toggle-title > .num {
-      width: 40px;
-      font-size: 14px;
-      line-height: 18px;
+    width: 30px;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  
+  /* Make text take less width to leave room for the arrow */
+  .toggle-block > .toggle-title > .text {
+    width: calc(100% - 70px); /* Reduced width to make room for arrow */
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  
+  /* Keep the arrow on the same line */
+  .toggle-block > .toggle-title > .arrow {
+    width: 40px;
+    font-size: 20px;
+  }
+}
+
+/* Even smaller screens */
+@media (max-width: 576px) {
+  .toggle-block > .toggle-title {
+    height: auto;
+    min-height: 50px;
+    padding: 8px 0;
+  }
+  
+  .toggle-block > .toggle-title > .num {
+    width: 25px;
+    font-size: 12px;
+  }
+  
+  .toggle-block > .toggle-title > .text {
+    width: calc(100% - 60px);
+    font-size: 12px;
+  }
+  
+  .toggle-block > .toggle-title > .arrow {
+    width: 35px;
+    font-size: 18px;
   }
 }
 
@@ -807,14 +852,6 @@ footer {
   text-align: center;
   color: var(--main-white);
   font-size: 20px;
-}
-
-@media (max-width: 800px) {
-  .toggle-block > .toggle-title > .text {
-      width: calc(100% - 80px);
-      font-size: 14px;
-      line-height: 18px;
-  }
 }
 
 .toggle-block > .toggle-title > .text {
@@ -831,26 +868,6 @@ footer {
   text-align: left;
   color: var(--main-white);
   font-size: 20px;
-}
-
-@media (max-width: 576px) {
-  .toggle-block > .toggle-title > .text {
-    width: calc(100% - 80px);
-    font-size: 12px;
-    line-height: 16px;
-  }
-  
-  .toggle-block > .toggle-title > .num {
-    width: 30px;
-    font-size: 12px;
-    line-height: 16px;
-  }
-}
-
-@media (max-width: 800px) {
-  .toggle-block > .toggle-title > .arrow {
-      width: 40px;
-  }
 }
 
 .toggle-block > .toggle-title > .arrow {
