@@ -845,11 +845,6 @@ footer {
     font-size: 12px;
     line-height: 16px;
   }
-  
-  /* Make toggle title height smaller on very small screens */
-  .toggle-block > .toggle-title {
-    height: 60px;
-  }
 }
 
 @media (max-width: 800px) {
