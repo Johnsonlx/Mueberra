@@ -96,7 +96,7 @@ h2 {
 h1 {
   font-size: 6rem;
   color: var(--main-gray);
-  padding: 5rem;
+  margin: 10rem;
 }
 
 h2 {
