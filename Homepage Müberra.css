@@ -978,7 +978,7 @@ p{
         .contact-form label {
             display: block;
             margin-bottom: 8px;
-            color: #555;
+            color: var(--main-white);
             font-weight: bold;
         }
 
