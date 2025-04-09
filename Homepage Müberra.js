@@ -141,6 +141,72 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
 // END FAQ
 
+// START FOMURLAR
+
+ document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            const successMessage = document.getElementById('successMessage');
+            
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const messageInput = document.getElementById('message');
+            
+            const nameError = document.getElementById('nameError');
+            const emailError = document.getElementById('emailError');
+            const messageError = document.getElementById('messageError');
+            
+            function validateEmail(email) {
+                const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return re.test(String(email).toLowerCase());
+            }
+            
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Reset error messages
+                nameError.textContent = '';
+                emailError.textContent = '';
+                messageError.textContent = '';
+                
+                let isValid = true;
+                
+                // Validate name
+                if (nameInput.value.trim() === '') {
+                    nameError.textContent = 'Bitte geben Sie Ihren Namen ein';
+                    isValid = false;
+                }
+                
+                // Validate email
+                if (emailInput.value.trim() === '') {
+                    emailError.textContent = 'Bitte geben Sie Ihre E-Mail-Adresse ein';
+                    isValid = false;
+                } else if (!validateEmail(emailInput.value.trim())) {
+                    emailError.textContent = 'Bitte geben Sie eine gültige E-Mail-Adresse ein';
+                    isValid = false;
+                }
+                
+                // Validate message
+                if (messageInput.value.trim() === '') {
+                    messageError.textContent = 'Bitte geben Sie Ihre Nachricht ein';
+                    isValid = false;
+                }
+                
+                if (isValid) {
+                    // In einer echten Anwendung würden Sie hier die Daten an einen Server senden
+                    // Hier zeigen wir nur die Erfolgsmeldung an
+                    contactForm.style.display = 'none';
+                    successMessage.style.display = 'block';
+                    
+                    // In einer realen Implementierung würden Sie hier einen AJAX-Request senden
+                    console.log('Form submitted with data:', {
+                        name: nameInput.value,
+                        email: emailInput.value,
+                        message: messageInput.value
+                    });
+                }
+            });
+        });
+
+// END FOMURLAR
