@@ -146,68 +146,85 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // START FOMURLAR
 
-document.addEventListener('DOMContentLoaded', function() {
-  const contactForm = document.getElementById('contactForm');
-  const successMessage = document.getElementById('successMessage');
+// alte JS für erstes formular 01.04.2025
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   const contactForm = document.getElementById('contactForm');
+//   const successMessage = document.getElementById('successMessage');
   
-  const nameInput = document.getElementById('name');
-  const emailInput = document.getElementById('email');
-  const messageInput = document.getElementById('message');
+//   const nameInput = document.getElementById('name');
+//   const emailInput = document.getElementById('email');
+//   const messageInput = document.getElementById('message');
   
-  const nameError = document.getElementById('nameError');
-  const emailError = document.getElementById('emailError');
-  const messageError = document.getElementById('messageError');
+//   const nameError = document.getElementById('nameError');
+//   const emailError = document.getElementById('emailError');
+//   const messageError = document.getElementById('messageError');
   
-  function validateEmail(email) {
-      const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-      return re.test(String(email).toLowerCase());
-  }
+//   function validateEmail(email) {
+//       const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+//       return re.test(String(email).toLowerCase());
+//   }
   
-  contactForm.addEventListener('submit', function(e) {
-      e.preventDefault();
+//   contactForm.addEventListener('submit', function(e) {
+//       e.preventDefault();
       
-      // Reset error messages
-      nameError.textContent = '';
-      emailError.textContent = '';
-      messageError.textContent = '';
+//       // Reset error messages
+//       nameError.textContent = '';
+//       emailError.textContent = '';
+//       messageError.textContent = '';
       
-      let isValid = true;
+//       let isValid = true;
       
-      // Validate name
-      if (nameInput.value.trim() === '') {
-          nameError.textContent = 'Lütfen adınızı girin';
-          isValid = false;
-      }
+//       // Validate name
+//       if (nameInput.value.trim() === '') {
+//           nameError.textContent = 'Lütfen adınızı girin';
+//           isValid = false;
+//       }
       
-      // Validate email
-      if (emailInput.value.trim() === '') {
-          emailError.textContent = 'Lütfen e-posta adresinizi giriniz';
-          isValid = false;
-      } else if (!validateEmail(emailInput.value.trim())) {
-          emailError.textContent = 'Geçerli bir e';
-          isValid = false;
-      }
+//       // Validate email
+//       if (emailInput.value.trim() === '') {
+//           emailError.textContent = 'Lütfen e-posta adresinizi giriniz';
+//           isValid = false;
+//       } else if (!validateEmail(emailInput.value.trim())) {
+//           emailError.textContent = 'Geçerli bir e';
+//           isValid = false;
+//       }
       
-      // Validate message
-      if (messageInput.value.trim() === '') {
-          messageError.textContent = 'Lütfen mesajınızı girin';
-          isValid = false;
-      }
+//       // Validate message
+//       if (messageInput.value.trim() === '') {
+//           messageError.textContent = 'Lütfen mesajınızı girin';
+//           isValid = false;
+//       }
       
-      if (isValid) {
-          // In einer echten Anwendung würden Sie hier die Daten an einen Server senden
-          // Hier zeigen wir nur die Erfolgsmeldung an
-          contactForm.style.display = 'none';
-          successMessage.style.display = 'block';
+//       if (isValid) {
+//           // In einer echten Anwendung würden Sie hier die Daten an einen Server senden
+//           // Hier zeigen wir nur die Erfolgsmeldung an
+//           contactForm.style.display = 'none';
+//           successMessage.style.display = 'block';
           
-          // In einer realen Implementierung würden Sie hier einen AJAX-Request senden
-          console.log('Form submitted with data:', {
-              name: nameInput.value,
-              email: emailInput.value,
-              message: messageInput.value
-          });
-      }
+//           // In einer realen Implementierung würden Sie hier einen AJAX-Request senden
+//           console.log('Form submitted with data:', {
+//               name: nameInput.value,
+//               email: emailInput.value,
+//               message: messageInput.value
+//           });
+//       }
+//   });
+// });
+
+// // END FOMURLAR
+
+
+
+// START FORMULAR Neu 11.04.2025
+
+const inputs = document.querySelectorAll(".contact-input");
+
+inputs.forEach((ipt) => {
+  ipt.addEventListener("focus", () => {
+    ipt.parentNode.classList.add("focus");
+  });
+  ipt.addEventListener("blur", () => {
+    ipt.parentNode.classList.remove("focus");
   });
 });
-
-// END FOMURLAR
