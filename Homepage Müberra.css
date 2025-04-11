@@ -1098,7 +1098,7 @@ p{
     color: var(--contact-inside-hover);
   }
   .form-wrapper {
-    max-width: 35rem;
+    max-width: 40rem;
   }
 
   .contact-form {
