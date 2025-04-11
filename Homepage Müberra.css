@@ -6,7 +6,9 @@
   --main-gray: #303841;
   --main-lightgray: #8e9cac;
   --main-lightblue: #4ce6d1;
-  --contact-inside: 
+  --contact-inside: hsla(var(--main-lightgray), 50%, 50%, 6.5%); 
+  --contact-inside-hover: hsla(var(--main-lightgray), 50%, 50%, 14%); 
+  --main-black: #000;
 }
 
 /* Setze box-sizing auf border-box für alle Elemente */
@@ -1104,6 +1106,10 @@ p{
     row-gap: 1rem;
   }
 
+  .input-wrap{
+  position: relative;
+  }
+
   .input-wrap.w-100 {
 grid-column: span 2;
   }
@@ -1111,8 +1117,45 @@ grid-column: span 2;
 
   .contact-input {
     width: 100%;
-    background-color: hsla(var(--main-lightgray), 50%, 50%, 6.5%)
+    background-color: var(--contact-inside);
+    padding: 1.5rem 1.35re, calc(0.75rem - 2px) 1.35rem;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    border-radius: 20px;
+    color: var(--main-black);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: 0.3s;
   }
 
+  .contact-input:hover {
+    background-color: var(--contact-inside-hover);
+  }
+
+.input-wrap label {
+  position: absolute;
+  top: 50%;
+  left: calc(1.35rem + 2 px);
+  transform: translateY(-50%);
+  color: var(--lightgray);
+  pointer-events: none;
+}
+
+.input-wrap .icon{
+  position: absolute;
+  right: calc(1.35rem + 2px);
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--lightgray);
+  font-size: 1.25rem;
+}
+
+textarea.contact-input{
+  resize: none;
+  width: 100%;
+  min-height: 150px;
+}
 
   /* FORMULAR 2222222222 END */
