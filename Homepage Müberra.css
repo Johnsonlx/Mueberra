@@ -1,4 +1,4 @@
-ja/* Custom properties/variables  */
+/* Custom properties/variables  */
 :root {
   --main-white: #f0f0f0;
   --main-red: #be3144;
@@ -1098,7 +1098,7 @@ p{
     color: var(--contact-inside-hover);
   }
   .form-wrapper {
-    max-width: 32rem;
+    max-width: 36rem;
   }
 
   .contact-form {
